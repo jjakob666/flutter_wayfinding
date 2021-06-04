@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello World 3D Map</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <div id="mapView"></div>
+  <script src="https://d1p5cqqchvbqmy.cloudfront.net/websdk/v1.63.16/mappedin.js"></script>
+  <script src="./index.js"></script>
+  
+  <h1 id="title">Hello World!</h1>
+<script type="text/javascript">
+            function fromFlutter(newTitle) {
+                document.getElementById("title").innerHTML = newTitle;
+                sendBack();
+             }
+
+             function sendBack() {
+                messageHandler.postMessage("Hello from JS");
+             }
+        </script>
+</body>
+</body>
+
+</html>
